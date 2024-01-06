@@ -8,7 +8,7 @@ This is my learning diary for data structures.
 
 Linked list consists of a "node" with a "next" feature pointed to the next node (single linked list) or with a "previous" plus "next" feature pointed to the previous and the next node (double linked list).
 
-1) [Single linked list](https://github.com/xueannafang/learn_data_structure/single_linked_list.py)
+1) [Single linked list](https://github.com/xueannafang/learn_data_structure/blob/main/single_linked_list.py)
 
 For single linked list (SLL), the complexity of inserting in the middle of a list is O(n), at the beginning or at the last of the list are both O(1).
 
