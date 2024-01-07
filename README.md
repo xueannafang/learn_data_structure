@@ -25,6 +25,11 @@ In the case of inserting in the middle, an additional index of the node before t
 
 Since iteration is ineviteable now, the complexity, in the worst case, would be reading through the entire list with total number of n elements. Therefore, the compexity is O(n).
 
+
+2) [Double linked list](https://github.com/xueannafang/learn_data_structure/blob/main/double_linked_list.py)
+
+Similar to single linked list, the node in double linked list (dll) has another pointer towards the previous node (which we call it "last") apart from the "next". Inserting a node in a dll requires reconnection towards both the next node and the last node.
+
 Some reflection from a chemist:
 
 Linked list is the first data structure I found closely related to chemistry. How computer see molecules? Atoms and bonds. How reactions happen? Bonds formation and breaking, or inserting or removal atoms, i.e., changing the connection among atoms. That's analogous to manipulating the connection between adjacent nodes. In certain large sytems we may not want to walk through the vast region of (chemically-redundant) backbone of the molecule when only the termini/reactive site is required to be visited. That's where such type of ds could be useful.
