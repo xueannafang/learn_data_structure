@@ -13,32 +13,35 @@ class single_node:
         return ', '.join([id_str, val_str, next_str])
 
 
-# Create an example sll containing numbers from 0 to 5
+# # Create an example sll containing numbers from 0 to 5
     
-#Step 1: Inite the sll by defining the first node as head
-head = single_node(0) #head is the first node of this sll with value equals to 0
-temp_ptr = head #the temp_ptr is a temporary pointer representing the current node
+# #Step 1: Inite the sll by defining the first node as head
+# head = single_node(0) #head is the first node of this sll with value equals to 0
+# temp_ptr = head #the temp_ptr is a temporary pointer representing the current node
 
-#Step 2: Assign the value of next node as its index plus 1 (only in this case) and move the temporary pointer to the next node
-for i in range(5):
-    temp_ptr.next = single_node(i+1) #the next node of current node has been created, with its value equals i+1
-    temp_ptr = temp_ptr.next #move the pointer to the next node
+# #Step 2: Assign the value of next node as its index plus 1 (only in this case) and move the temporary pointer to the next node
+# for i in range(5):
+#     temp_ptr.next = single_node(i+1) #the next node of current node has been created, with its value equals i+1
+#     temp_ptr = temp_ptr.next #move the pointer to the next node
 
-# See how it looks like
-ptr = head
-print(f"id of None: {id(None)}")
-#while ptr is not none, i.e., not reaching the end of this linked list
-while ptr:
-    print(ptr)
-    ptr = ptr.next
+# # See how it looks like
+# ptr = head
+# print(f"id of None: {id(None)}")
+# #while ptr is not none, i.e., not reaching the end of this linked list
+# while ptr:
+#     print(ptr)
+#     ptr = ptr.next
 
 
 
 # define a generalised sll with operations including add at the beginning, at the end and insert in the middle
 class sll:
-    def __init__(self, head):
-        self.head = head #As defined above, head is the first node of this sll
-        self.tail = head #When there's just one elemnet, the tail is the head
+    def __init__(self, *values):
+
+        self.head = single_node(values[0]) #As defined above, head is the first node of this sll
+        self.tail = self.head #When there's just one elemnet, the tail is the head
+        for value in values:
+            self.add_last(value)
     
     def add_first(self, value_to_add):
         '''
