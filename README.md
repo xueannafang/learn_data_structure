@@ -62,3 +62,8 @@ A few steps can be taken to check if parent node, left, right child nodes exist 
 Special case is if neither child nodes is valid, we need to swap with the smaller child.
 
 There should be many ways to implement this. My thought (may not the most efficient way..) is to continue checking the surrounding layers until the working layer has reached the top (i.e., no parent layer can be found). 
+
+
+Reflection from a chemist:
+
+Numbering functional groups according to importance(?) 
