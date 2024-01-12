@@ -94,7 +94,7 @@ class binary_tree:
         #swap the value of two idx, idx_1 is at the higher level at the beginning of this function
         mid_var = self.pq_bt[idx_1]
         self.pq_bt[idx_1] = self.pq_bt[idx_2]
-        self.pq_bt[idx_2] = self.pq_bt[mid_var]
+        self.pq_bt[idx_2] = mid_var
 
     def get_parent_idx(self, idx):
         parent_idx = (idx-1)//2
